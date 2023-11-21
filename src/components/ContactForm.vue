@@ -1,9 +1,10 @@
 <template>
-    <form @submit.prevent="handleSubmit" class="form-container">
-      <input v-model="form.name" type="text" placeholder="Nom" class="input-field" />
-      <input v-model="form.email" type="email" placeholder="Email" class="input-field" />
-      <textarea v-model="form.message" placeholder="Message" class="input-field textarea-field"></textarea>
-      <button type="submit" class="submit-button">Envoyer</button>
+    <form name="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact-form" />
+      <input v-model="form.name" type="text" name="name" placeholder="Nom" />
+      <input v-model="form.email" type="email" name="email" placeholder="Email" />
+      <textarea v-model="form.message" name="message" placeholder="Message"></textarea>
+      <button type="submit">Envoyer</button>
     </form>
   </template>
   
@@ -15,16 +16,26 @@
           name: '',
           email: '',
           message: ''
-        }
+        },
+        isSubmitted: false
       };
     },
     methods: {
       handleSubmit() {
-        // Logique d'envoi du formulaire
+        // Vous pouvez ajouter ici une logique de validation ou de traitement des données
+        console.log("Le formulaire a été soumis avec : ", this.form);
+  
+        // Après la soumission, vous pourriez vouloir réinitialiser le formulaire ou gérer les états de l'interface utilisateur
+        this.isSubmitted = true;
+        this.resetForm();
+      },
+      resetForm() {
+        this.form = { name: '', email: '', message: '' };
       }
     }
   };
   </script>
+  
   
   <style>
   .form-container {
