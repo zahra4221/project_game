@@ -5,7 +5,7 @@
         <img src="@/assets/logo_brand.png" alt="Brand Hunt Logo" />
       </div>
       <div class="welcome-message">
-        <h1>Welcome to Brand Hunt!</h1>
+        <h1>Welcome to Brand Hunt !</h1>
         <p>Dive into the exciting world of brands and advertising with our interactive game.</p>
       </div>
     </div>

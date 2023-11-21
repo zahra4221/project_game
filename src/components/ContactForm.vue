@@ -1,56 +1,31 @@
 <template>
-    <div class="contact-page">
-      <h1>Contact Us</h1>
-      <p>If you have any suggestions or questions about our game, please feel free to send us a message.</p>
-      <div class="contact-form">
-        <form @submit.prevent="submitForm">
-
-            <div class="form">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" v-model="formData.name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" v-model="formData.email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" v-model="formData.message" rows="4" required></textarea>
-          </div>
-          <button type="submit">Submit</button>
-          </div>
-        </form>
-      </div>
-    </div>
+    <form @submit.prevent="handleSubmit">
+      <input v-model="form.name" type="text" placeholder="Nom" />
+      <input v-model="form.email" type="email" placeholder="Email" />
+      <textarea v-model="form.message" placeholder="Message"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
   </template>
   
   <script>
   export default {
     data() {
       return {
-        formData: {
-          name: "",
-          email: "",
-          message: ""
+        form: {
+          name: '',
+          email: '',
+          message: ''
         }
       };
     },
     methods: {
-      submitForm() {
-        // Ici, vous pouvez ajouter le code pour envoyer le formulaire à un serveur ou effectuer d'autres actions.
-        // Par exemple, vous pouvez afficher les données dans la console pour le moment :
-        console.log("Form submitted with data:", this.formData);
-        // Réinitialiser le formulaire après soumission :
-        this.formData = {
-          name: "",
-          email: "",
-          message: ""
-        };
+      handleSubmit() {
+        // Logique d'envoi du formulaire
       }
     }
   };
   </script>
+  
   
   <style scoped>
 

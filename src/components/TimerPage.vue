@@ -13,7 +13,7 @@
   <button @click="resetTimer" class="reset-button" :disabled="timerRunning">Reset</button>
 </div>
       <div class="duration-options">
-        <label for="duration">Choose the duration (in seconds) :</label>
+        <label class="duration_title" for="duration">Choose the duration (in seconds) :</label>
         <input type="number" id="duration" v-model="totalTime" :disabled="timerRunning" />
       </div>
     </div>
@@ -171,11 +171,16 @@
   
   .duration-options {
     margin-top: 20px;
+    align-content: center;
     display: flex;
     flex-direction: row;
     align-items: center;
   }
   
+  .duration_title{
+    display: flex;
+    align-content: center;
+  }
   label {
     font-size: 16px;
     margin-bottom: 5px;
