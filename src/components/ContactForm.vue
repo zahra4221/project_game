@@ -1,5 +1,5 @@
 <template>
-    <form name="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+    <form @submit.prevent="handleSubmit" name="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact-form" />
       <input v-model="form.name" type="text" name="name" placeholder="Nom" />
       <input v-model="form.email" type="email" name="email" placeholder="Email" />
@@ -22,19 +22,14 @@
     },
     methods: {
       handleSubmit() {
-        // Vous pouvez ajouter ici une logique de validation ou de traitement des données
-        console.log("Le formulaire a été soumis avec : ", this.form);
-  
-        // Après la soumission, vous pourriez vouloir réinitialiser le formulaire ou gérer les états de l'interface utilisateur
+        // Votre logique de soumission de formulaire ici
         this.isSubmitted = true;
-        this.resetForm();
-      },
-      resetForm() {
-        this.form = { name: '', email: '', message: '' };
+        // Autres actions après la soumission
       }
     }
   };
   </script>
+  
   
   
   <style>
