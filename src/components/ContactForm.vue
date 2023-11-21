@@ -1,9 +1,9 @@
 <template>
-    <form @submit.prevent="handleSubmit">
-      <input v-model="form.name" type="text" placeholder="Nom" />
-      <input v-model="form.email" type="email" placeholder="Email" />
-      <textarea v-model="form.message" placeholder="Message"></textarea>
-      <button type="submit">Envoyer</button>
+    <form @submit.prevent="handleSubmit" class="form-container">
+      <input v-model="form.name" type="text" placeholder="Nom" class="input-field" />
+      <input v-model="form.email" type="email" placeholder="Email" class="input-field" />
+      <textarea v-model="form.message" placeholder="Message" class="input-field textarea-field"></textarea>
+      <button type="submit" class="submit-button">Envoyer</button>
     </form>
   </template>
   
@@ -26,54 +26,40 @@
   };
   </script>
   
-  
-  <style scoped>
-
-.contact-page {
-    text-align: center;
-    padding: 20px;
-    margin-top: 100px;
-  }
-  
-  .form{
-    margin-top: 50px;
-  }
-  h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .contact-form {
-    max-width: 400px;
+  <style>
+  .form-container {
+    max-width: 500px;
     margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
   }
   
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    font-weight: bold;
-  }
-  
-  input,
-  textarea {
+  .input-field {
     width: 100%;
     padding: 10px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 4px;
   }
   
-  button {
-    background-color: #007bff;
+  .textarea-field {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .submit-button {
+    background-color: #4CAF50;
     color: white;
-    border: none;
     padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s;
   }
   
-  button:hover {
-    background-color: #0056b3;
+  .submit-button:hover {
+    background-color: #45a049;
   }
   </style>
   
