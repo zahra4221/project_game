@@ -13,12 +13,6 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-    <form @submit.prevent="handleSubmit" name="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="contact-form" />
-      <input v-model="form.name" type="text" name="name" placeholder="Nom" />
-      <input v-model="form.email" type="email" name="email" placeholder="Email" />
-      <textarea v-model="form.message" name="message" placeholder="Message"></textarea>
-      <button type="submit">Envoyer</button>
-    </form> 
+
   </body>
 </html>
