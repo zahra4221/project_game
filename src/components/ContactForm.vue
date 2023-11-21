@@ -4,7 +4,7 @@
       <input v-model="form.name" type="text" name="name" placeholder="Nom" />
       <input v-model="form.email" type="email" name="email" placeholder="Email" />
       <textarea v-model="form.message" name="message" placeholder="Message"></textarea>
-      <button type="submit">Envoyer</button>
+      <button type="submit">Envoyerrr</button>
     </form>
   </template>
   
