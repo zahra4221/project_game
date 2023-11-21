@@ -21,7 +21,7 @@ header {
   background-color: transparent;
   color: white;
   padding: 1rem;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   transition: background-color 0.3s ease;
