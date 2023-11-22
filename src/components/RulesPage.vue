@@ -24,7 +24,7 @@ width: 60%;
 }
 @media screen and (max-width: 600px) {
   .image_rules {
-    width: 80%;
+    width: 90%;
     margin-top: 10%;
   }
 }
