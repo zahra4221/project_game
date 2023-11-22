@@ -20,8 +20,16 @@ margin-top: 5%;
 }
 
 .image_rules {
-width: 50%;
+width: 60%;
 }
+@media screen and (max-width: 600px) {
+  .image_rules {
+    width: 80%;
+    margin-top: 10%;
+  }
+}
+
+
 </style>
 
   
