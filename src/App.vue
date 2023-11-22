@@ -32,6 +32,8 @@ export default {
 
 body {
   background-color: black;
+  overflow-x: hidden;
+
 }
 
 </style>

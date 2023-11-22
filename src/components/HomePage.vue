@@ -28,21 +28,24 @@
   }
   
   .logo-animation img {
-   
-    animation: spinAndGrow 2s ease-in-out forwards;
-    width:35%
+  animation: spinAndGrow 2s ease-in-out forwards;
+  -webkit-animation: spinAndGrow 2s ease-in-out forwards; 
+  width: 35%;
+}
+
+@keyframes spinAndGrow {
+  from {
+    transform: scale(0.1) rotate(0deg);
+    -webkit-transform: scale(0.1) rotate(0deg); 
+    opacity: 0.1;
   }
-  
-  @keyframes spinAndGrow {
-    from {
-      transform: scale(0.1) rotate(0deg);
-      opacity: 0.1;
-    }
-    to {
-      transform: scale(1) rotate(360deg);
-      opacity: 1;
-    }
+  to {
+    transform: scale(1) rotate(360deg);
+    -webkit-transform: scale(1) rotate(360deg); 
+    opacity: 1;
   }
+}
+
   
   .welcome-message h1 {
     margin-top: 20px;
