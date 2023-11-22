@@ -8,7 +8,7 @@
       <h2>Necessary materials:</h2>
       <ul>
         <li>A game board with colored squares, some marked with stars.</li>
-        <li>A die.</li>
+        <li>A dice.</li>
         <li>Tokens for each team.</li>
         <li>Challenge cards corresponding to each color on the board.</li>
         <li>"Challenge" cards.</li>
@@ -17,7 +17,7 @@
       </ul>
   
       <h2>Determining the starting team:</h2>
-      <p>Before starting, each team rolls the die once. The team with the lowest number starts the game.</p>
+      <p>Before starting, each team rolls the dice once. The team with the lowest number starts the game.</p>
   
       <h2>Setup:</h2>
 <p>
@@ -45,7 +45,7 @@
   
       <h2>Game play:</h2>
       <ul>
-        <li><strong>Roll the die:</strong> Teams take turns rolling the die and move their token the indicated number of squares.</li>
+        <li><strong>Roll the dice:</strong> Teams take turns rolling the dice and move their token the indicated number of squares.</li>
         <br/>
         <li><strong>Type of challenge:</strong> Depending on the color of the square the team lands on, they must take on a different type of challenge:</li>
         
@@ -109,13 +109,13 @@
   </script>
   
   <style scoped>
-  /* Votre style CSS pour la page de règles ici */
+
   .rules-page {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.2); /* Fond transparent */
-    border: 2px solid white; /* Bordure blanche */
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white; 
     border-radius: 10px;
     text-align: left;
     color: white;

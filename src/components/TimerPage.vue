@@ -45,7 +45,7 @@
               this.totalTime--;
             } else {
               clearInterval(this.timerInterval);
-              // Gérer la fin du chronomètre ici
+              
             }
           }, 1000);
           this.timerRunning = true;
@@ -58,7 +58,7 @@
       resetTimer() {
         clearInterval(this.timerInterval);
         this.timerRunning = false;
-        this.totalTime = 60; // Remplacez par la durée initiale souhaitée
+        this.totalTime = 60; 
       },
     },
   };

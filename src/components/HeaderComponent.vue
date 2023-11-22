@@ -25,7 +25,7 @@ header {
   width: 100%;
   top: 0;
   transition: background-color 0.3s ease;
-  z-index: 1000; /* S'assure que l'en-tête reste au-dessus des autres éléments */
+  z-index: 1000; 
 }
 
 .nav-link {
@@ -34,16 +34,16 @@ header {
   color: white;
   transition: background-color 0.3s ease, color 0.3s ease;
   padding: 0.5rem 1rem;
-  pointer-events: auto; /* Permet les événements de clic */
+  pointer-events: auto; 
 }
 
 .nav-link:hover, .router-link-exact-active {
   background-color: white;
   color: black;
-  border-radius: 5px; /* Optionnel: pour des coins arrondis */
+  border-radius: 5px; 
 }
 
-/* Style supplémentaire pour le lien actif si vous utilisez vue-router */
+
 .router-link-exact-active {
   font-weight: bold;
 }

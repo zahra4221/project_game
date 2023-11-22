@@ -1,7 +1,7 @@
 <template>
     <div class="home-container">
       <div class="logo-animation">
-        <!-- Here, you will insert your logo with a CSS animation -->
+      
         <img src="@/assets/logo_brand.png" alt="Brand Hunt Logo" />
       </div>
       <div class="welcome-message">
@@ -12,11 +12,11 @@
   </template>
   
   <script>
-  // Your script goes here
+
 
   export default {
     name: 'HomePage',
-    // Les données, méthodes et hooks du cycle de vie viendront ici si nécessaire.
+    
   };
   </script>
   
@@ -28,7 +28,7 @@
   }
   
   .logo-animation img {
-    /* Animation CSS pour faire tourner et grossir le logo */
+   
     animation: spinAndGrow 2s ease-in-out forwards;
     width:35%
   }
